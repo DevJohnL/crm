@@ -1,0 +1,10 @@
+[build]
+  base = "crm-app"
+  command = "npm run build"
+  publish = "dist"
+
+# SPA: todas as rotas caem no index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
